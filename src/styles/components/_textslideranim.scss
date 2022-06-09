@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+$slider-name: typing-slider;
+$slides: 3;
+$typing-duration: 2s;
+$tab-letters: 9 7 4; //number of characters in each paragraph
+$slider-font-size: 2rem;
+$background: white;
+$theme-1 : #6C76AC;
+
+
+.typing-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 116px;
+  color: $theme-1;
+  z-index: 2;
+
+  //background-color: brown;
+}
+
+@keyframes cursor {
+  from, to { border-color: transparent; }
+  50% { border-color: transparent; }
+}
+
+@keyframes typing {
+  from { width: 100%; }
+  90%, to { width: 0; }
+}
+
+@keyframes slide {
+  #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 3px; }
+  to { font-size: 0; letter-spacing: 0; }
+}
+
+.#{$slider-name} {
+    font-family: 'VT323', monospace;
+  //font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.#{$slider-name} p {
+  position: relative;
+  display: inline;
+  font-size: 0;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  animation: slide $typing-duration * $slides step-start infinite;
+}
+
+.#{$slider-name} p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 3px solid $theme-1;
+  background-color: rgba(255,255,255, 0.0);
+  backdrop-filter: blur(85px);
+  -moz-backdrop-filter : blur(60px);
+  animation: typing $typing-duration infinite,
+             cursor 1s infinite;
+}
+
+@each $letters in $tab-letters {
+  $i: index($tab-letters, $letters);
+  .#{$slider-name} p:nth-child(#{$i}) {
+    animation-delay:  $typing-duration * ($i - 1);
+    &::after {
+      animation-delay: $typing-duration * ($i - 1);
+      animation-timing-function: steps(#{$letters}), step-end;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .typing-slider{
+        width: 200px;
+    }
+    @keyframes slide {
+        #{100% / $slides} { font-size: 30px; letter-spacing: 3px; }
+        to { font-size: 0; letter-spacing: 0; }
+      }
+    
+}
