@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/TristanRoelPortfolio/static/css/main.7199e4c1.css",
+    "main.js": "/TristanRoelPortfolio/static/js/main.4b2c2409.js",
+    "static/media/Curriculum_Vitae.pdf": "/TristanRoelPortfolio/static/media/Curriculum_Vitae.497cac6e16154670f459.pdf",
+    "static/media/IMG_0501.PNG": "/TristanRoelPortfolio/static/media/IMG_0501.224c63d48d60edf134f6.PNG",
+    "static/media/Trame1trsprtRvrs.png": "/TristanRoelPortfolio/static/media/Trame1trsprtRvrs.fd829efed337c5f9465a.png",
+    "static/media/Trame1trsprt.png": "/TristanRoelPortfolio/static/media/Trame1trsprt.3209db4b1e39d4257876.png",
+    "static/media/r.png": "/TristanRoelPortfolio/static/media/r.2638a2bef5322471309d.png",
+    "static/media/Montagne2.png": "/TristanRoelPortfolio/static/media/Montagne2.7dcc821d860a4c584ce1.png",
+    "static/media/Logos2.png": "/TristanRoelPortfolio/static/media/Logos2.c0e5c08de61d93f6dc86.png",
+    "static/media/LeRobotTransparent.png": "/TristanRoelPortfolio/static/media/LeRobotTransparent.db1b7708c2e90da579f5.png",
+    "static/media/Metrsprntltg.png": "/TristanRoelPortfolio/static/media/Metrsprntltg.20ed7fa04be6027ab088.png",
+    "static/media/Logos.png": "/TristanRoelPortfolio/static/media/Logos.00e4d022815c992cf83b.png",
+    "static/media/Work_right3.gif": "/TristanRoelPortfolio/static/media/Work_right3.d8628be3142e3b782e69.gif",
+    "static/media/Work_left3.gif": "/TristanRoelPortfolio/static/media/Work_left3.5924e6a0c3b563c43b4d.gif",
+    "static/media/RobotWalkTransparent.gif": "/TristanRoelPortfolio/static/media/RobotWalkTransparent.1bfcec61eab958d8fd34.gif",
+    "index.html": "/TristanRoelPortfolio/index.html",
+    "main.7199e4c1.css.map": "/TristanRoelPortfolio/static/css/main.7199e4c1.css.map",
+    "main.4b2c2409.js.map": "/TristanRoelPortfolio/static/js/main.4b2c2409.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7199e4c1.css",
+    "static/js/main.4b2c2409.js"
+  ]
+}
